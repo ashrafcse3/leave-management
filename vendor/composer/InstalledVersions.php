@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'e609f4b20c257e03aa495a6e300df925875594e9',
+    'reference' => '7b01dd95da627f4be3c72be406e03815cef821b3',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -469,7 +469,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'e609f4b20c257e03aa495a6e300df925875594e9',
+      'reference' => '7b01dd95da627f4be3c72be406e03815cef821b3',
     ),
     'laravel/sail' => 
     array (
@@ -589,6 +589,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '06e2ebd25f2869e54a306dda991f7db58066f7f6',
+    ),
+    'painlesscode/breeze-multiauth' => 
+    array (
+      'pretty_version' => 'v1.1.4',
+      'version' => '1.1.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '72fcb2fd1b244a11e6863905cc0a4b86dc886e4b',
     ),
     'phar-io/manifest' => 
     array (

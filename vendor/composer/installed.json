@@ -2533,6 +2533,68 @@
             "install-path": "../opis/closure"
         },
         {
+            "name": "painlesscode/breeze-multiauth",
+            "version": "v1.1.4",
+            "version_normalized": "1.1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/painlesscode/breeze-multiauth.git",
+                "reference": "72fcb2fd1b244a11e6863905cc0a4b86dc886e4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/painlesscode/breeze-multiauth/zipball/72fcb2fd1b244a11e6863905cc0a4b86dc886e4b",
+                "reference": "72fcb2fd1b244a11e6863905cc0a4b86dc886e4b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "^8.0",
+                "illuminate/support": "^8.0",
+                "nikic/php-parser": "^4.6",
+                "php": "^7.3|^8.0"
+            },
+            "time": "2021-03-27T15:02:33+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Painless\\BreezeMultiAuth\\BreezeMultiAuthServiceProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Painless\\BreezeMultiAuth\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hazzaz Bin Faiz",
+                    "email": "hazzazbinfaiz@gmail.com"
+                }
+            ],
+            "description": "Multi authentication system with laravel breeze",
+            "keywords": [
+                "auth",
+                "breeze",
+                "laravel",
+                "multiauth"
+            ],
+            "support": {
+                "issues": "https://github.com/painlesscode/breeze-multiauth/issues",
+                "source": "https://github.com/painlesscode/breeze-multiauth/tree/v1.1.4"
+            },
+            "install-path": "../painlesscode/breeze-multiauth"
+        },
+        {
             "name": "phar-io/manifest",
             "version": "2.0.1",
             "version_normalized": "2.0.1.0",
@@ -7706,6 +7768,7 @@
         "mockery/mockery",
         "myclabs/deep-copy",
         "nunomaduro/collision",
+        "painlesscode/breeze-multiauth",
         "phar-io/manifest",
         "phar-io/version",
         "phpdocumentor/reflection-common",

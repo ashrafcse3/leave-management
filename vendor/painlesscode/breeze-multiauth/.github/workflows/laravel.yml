@@ -1,0 +1,45 @@
+name: Laravel
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  laravel-tests:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Create Laravel 8 project
+        run: composer create-project --prefer-dist laravel/laravel:^8.0 ./
+        
+      - name: Ensure Directory exists
+        run: mkdir -p packages/painlesscode/breeze-multiauth
+        
+      - uses: actions/checkout@v2
+        with:
+          path: packages/painlesscode/breeze-multiauth 
+          
+      - name: Link composer with package
+        run: composer config repositories.breeze-multiauth path packages/painlesscode/breeze-multiauth
+        
+      - name: Create Database
+        run: |
+          mkdir -p database
+          touch database/database.sqlite
+        
+      - name: Setup Breeze Multiauth
+        env:
+          DB_CONNECTION: sqlite
+          DB_DATABASE: database/database.sqlite
+        run: |
+          composer require painlesscode/breeze-multiauth:*
+          php artisan breeze:multiauth admin --asset
+        
+      - name: Execute tests
+        env:
+          DB_CONNECTION: sqlite
+          DB_DATABASE: database/database.sqlite
+        run: php artisan test

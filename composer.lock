@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b4e5c4a079a99be174594c9ba5eceb0",
+    "content-hash": "e40792be1d2b3a8973f8c81c01c2ab11",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5612,6 +5612,65 @@
                 }
             ],
             "time": "2021-04-09T13:38:32+00:00"
+        },
+        {
+            "name": "painlesscode/breeze-multiauth",
+            "version": "v1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/painlesscode/breeze-multiauth.git",
+                "reference": "72fcb2fd1b244a11e6863905cc0a4b86dc886e4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/painlesscode/breeze-multiauth/zipball/72fcb2fd1b244a11e6863905cc0a4b86dc886e4b",
+                "reference": "72fcb2fd1b244a11e6863905cc0a4b86dc886e4b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "^8.0",
+                "illuminate/support": "^8.0",
+                "nikic/php-parser": "^4.6",
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Painless\\BreezeMultiAuth\\BreezeMultiAuthServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Painless\\BreezeMultiAuth\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hazzaz Bin Faiz",
+                    "email": "hazzazbinfaiz@gmail.com"
+                }
+            ],
+            "description": "Multi authentication system with laravel breeze",
+            "keywords": [
+                "auth",
+                "breeze",
+                "laravel",
+                "multiauth"
+            ],
+            "support": {
+                "issues": "https://github.com/painlesscode/breeze-multiauth/issues",
+                "source": "https://github.com/painlesscode/breeze-multiauth/tree/v1.1.4"
+            },
+            "time": "2021-03-27T15:02:33+00:00"
         },
         {
             "name": "phar-io/manifest",
